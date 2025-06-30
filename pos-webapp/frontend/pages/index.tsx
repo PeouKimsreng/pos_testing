@@ -28,6 +28,7 @@ export default function Home() {
             <Table sx={{ minWidth: 650 }} aria-label="simple table">
               <TableHead>
                 <TableRow>
+                  <TableCell> </TableCell>
                   <TableCell>Product Name</TableCell>
                   <TableCell align="right">Cost&nbsp;(USD)</TableCell>
                   <TableCell align="right">Quantity</TableCell>
