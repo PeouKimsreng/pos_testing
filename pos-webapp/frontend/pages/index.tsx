@@ -1,3 +1,4 @@
+import { ListItem } from '@mui/material';
 import { useEffect, useState } from 'react';
 
 export default function Home() {
@@ -17,13 +18,15 @@ export default function Home() {
   }, []);
 
   return (
-    <div className="p-6">
+      <><title>Product List</title><div className="p-6">
       <h1 className="text-xl font-bold mb-4">Product List</h1>
       <ul>
         {products.map((p: any) => (
-          <li key={p.id}>{p.name} - ${p.price} - Stock: {p.stock_qty}</li>
+          <ListItem key={p.id}>
+            {p.name} - ${p.price} - Stock: {p.stock_qty}
+          </ListItem>
         ))}
       </ul>
-    </div>
+    </div></>
   );
 }
