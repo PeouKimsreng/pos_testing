@@ -30,7 +30,7 @@ export default function Home() {
                 <TableRow>
                   <TableCell>Product Name</TableCell>
                   <TableCell align="right">Cost&nbsp;(USD)</TableCell>
-                  <TableCell align="right">Sale Price&nbsp;(USD)</TableCell>
+                  <TableCell align="right">Quantity</TableCell>
                 </TableRow>
               </TableHead>
               <TableBody>
@@ -40,7 +40,7 @@ export default function Home() {
                       {p.name}
                     </TableCell>
                     <TableCell align="right">${p.price}</TableCell>
-                    <TableCell align="right">Stock: {p.stock_qty}</TableCell>
+                    <TableCell align="right">{p.stock_qty}</TableCell>
                   </TableRow>
                 ))}
               </TableBody>
