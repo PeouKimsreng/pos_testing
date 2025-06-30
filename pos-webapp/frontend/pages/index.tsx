@@ -1,4 +1,4 @@
-import { ListItem, Paper, Table, TableBody, TableCell, TableContainer, TableHead, TableRow } from '@mui/material';
+import { Avatar, ListItem, Paper, Table, TableBody, TableCell, TableContainer, TableHead, TableRow } from '@mui/material';
 import { useEffect, useState } from 'react';
 
 export default function Home() {
@@ -36,6 +36,7 @@ export default function Home() {
               <TableBody>
                 {products.map((p: any) => (
                   <TableRow key={p.id}>
+                    <Avatar alt="Remy Sharp" src="/static/images/avatar/1.png" />
                     <TableCell component="th" scope="row">
                       {p.name}
                     </TableCell>
